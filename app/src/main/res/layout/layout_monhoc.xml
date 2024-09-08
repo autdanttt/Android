@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+        >
+    
+    <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_marginRight="5dp"
+                android:id="@+id/edtMonHoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"></EditText>
+        <Button
+                android:onClick="addMonHoc"
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:text="Them"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_marginRight="5dp"></Button>
+        <Button
+                android:onClick="editMonHoc"
+                android:id="@+id/btnEdit"
+                android:text="Sua"
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <ListView
+            android:layout_marginTop="30dp"
+            android:id="@+id/lvMonHoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
